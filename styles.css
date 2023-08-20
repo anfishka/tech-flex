@@ -1,7 +1,12 @@
+:root{
+    --yellow:#FFCE00;
+    --purple:#6a5eff;
+}
+
 body{
     font: 75%/150% Arial, Helvetica, sans-serif;
-    width: 1058px;
-    margin: 0 auto;
+    /* width: 1058px; */
+    /* margin: 0 auto; */
 }
 a{
     text-decoration: none;
@@ -9,13 +14,17 @@ a{
 }
 
 button{
-    font: 75%/150% Arial, Helvetica, sans-serif;
-    width: 100%;
-    background: #c99401;
+    font-family: Montserrat,sans-serif;
+    background: var(--yellow);
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding: 6px  9px;
+    font-weight: bold;
 }
-
+.price-holder{
+    font-weight: 700;
+    font-size: 24px;
+}
 
 
 img{
@@ -23,19 +32,62 @@ img{
 }
 .container{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     flex-basis: auto;
-    gap: 50px;
-    justify-content: center;
-   align-items: center;
+    gap: 50px; */
+    /* justify-content: center;
+   align-items: center; */
     /* flex-basis: calc(1058px - 30px * 5px)/3; */
 }
+.product-items{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% + 16px);
+    margin: 0 -8px;
+}
+.item{
+    position: relative;
+     width: 100%;
+     margin: 0 0 16px;
+
+    
+}
+
 .item-inner{
    
-    width: 250px;
+    display: flex;
     /* height: 150px; */
     border: 1px solid #a4a4a4;
     padding: 10px;
     border-radius: 5px;
-
+}
+.sticker-wrapper{
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.sticker{
+color: var(--purple);
+padding: 2px 8px;
+font-weight: 900;
+font-size: 14px;
+font-family: Montserrat,sans-serif;
+}
+.product{
+    /* font: 75%/150% Arial, Helvetica, sans-serif; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+.price-holder{
+    font-weight: 700;
+    line-height: 1;
+    font-size: 24px;
+    height: 40px;
+    margin-bottom: 24px;
+  
 }
